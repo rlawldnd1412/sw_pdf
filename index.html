@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>박정은PDF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}
+
+		#top {
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		#top img {
+			width: 100%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<!--완성된 pdf 이미지를 1320크기로 뽑아서, 죽 나열하시면 됩니다!-->
+	<div id="top">
+		<img src="./images/A4 - 00.jpg" class="피그마00"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/A4 - 01.png" class="피그마01"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/A4 - 02.png" class="피그마02"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/A4 - 03.png" class="피그마03">
+		<img src="./images/A4 - 04.png" class="피그마04">
+		<img src="./images/A4 - 05.png" class="피그마05">
+		<img src="./images/A4 - 06.jpg" class="피그마06">
+		<img src="./images/A4 - 07.png" class="피그마07">
+		<img src="./images/A4 - 08.png" class="피그마08">
+		<img src="./images/A4 - 09.png" class="피그마0">
+		<img src="./images/A4 - 10.jpg" class="피그마10">
+		<img src="./images/A4 - 11.png" class="피그마11">
+		<img src="./images/A4 - 12.png" class="피그마12">
+		<img src="./images/A4 - 13.png" class="피그마13">
+		<img src="./images/A4 - 14.png" class="피그마14">
+		<img src="./images/A4 - 15.png" class="피그마15">
+		<img src="./images/A4 - 16.png" class="피그마16">
+		<img src="./images/A4 - 17.jpg" class="피그마17">
+		<img src="./images/A4 - 18.jpg" class="피그마18">
+		<img src="./images/A4 - 19.jpg" class="피그마19">
+		<img src="./images/A4 - 20.jpg" class="피그마20">
+		<img src="./images/A4 - 21.jpg" class="피그마21">
+		<img src="./images/A4 - 22.jpg" class="피그마22">
+		<img src="./images/A4 - 23.jpg" class="피그마23">
+		<img src="./images/A4 - 24.png" class="피그마24">
+		<img src="./images/A4 - 25.png" class="피그마25">
+		<img src="./images/A4 - 26.png" class="피그마26">
+		<img src="./images/A4 - 27.png" class="피그마27">
+		<img src="./images/A4 - 28.png" class="피그마28">
+		<img src="./images/A4 - 29.png" class="피그마29">
+		<img src="./images/A4 - 30.png" class="피그마30">
+		<img src="./images/A4 - 31.jpg" class="피그마31">
+		<img src="./images/A4 - 32.jpg" class="피그마32">
+		<img src="./images/A4 - 33.jpg" class="피그마33">
+		<img src="./images/A4 - 34.jpg" class="피그마34">
+		<img src="/images/A4 - 35.jpg" class="피그마35">
+		<img src="./images/A4 - 36.jpg" class="피그마36">
+		<img src="./images/A4 - 37.jpg" class="피그마37">
+		<img src="./images/A4 - 38.jpg" class="피그마38">
+		<img src="./images/A4 - 39.jpg" class="피그마39">
+		<img src="./images/A4 - 40.jpg" class="피그마40">
+		<img src="./images/A4 - 41.jpg" class="피그마41">
+		<img src="./images/A4 - 42.jpg" class="피그마42">
+		<img src="./images/A4 - 43.jpg" class="피그마43">
+		<img src="./images/A4 - 44.jpg" class="피그마44">
+
+	</div>
+	<div class="fixed_box">
+		<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+			<img src="images/top.png" alt="top">
+		</a>
+	</div>
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
